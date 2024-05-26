@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora de racha</title>
+</head>
+<body>
+    <div class="conteudo">
+        <div class="infos-calculadora">
+            <h1>Calculadora de Racha</h1>
+            <h3>Descubra qual carro é mais propenso a vencer um racha!</h3>
+            <p>Nesta calculadora não levamos em consideração carros com caixa de marcha reduzida (Caminhão e camionetes de grande porte) nem fatores externos que possam influenciar na vitória ou não de seu carro na vida real (Como distracionar, errar marcha, largar atrasado...). Não leve 100% a sério o resultado que aparecer, na prática tudo pode ser diferente</p>
+        </div>
+        <div class="area-comparacao">
+            <div class="carro01 comparar" id="carro01">
+                <p class="id-carro">Seu Carro</p>
+                <div>
+                    <fieldset class="field-nome-carro01 field-nome-carro">
+                        <label for="nome-carro01">Qual é o seu carro?</label>
+                        <input class="input-nome-carro01 input-nome-carro" type="text" name="nome-carro01" id="nome-carro01" required placeholder="Camaro SS 2015">
+                    </fieldset>
+                    <fieldset class="field-potencia-carro01 field-potencia-carro">
+                        <label for="potência-carro01">Potência (em CV)</label>
+                        <input class="input-potencia-carro01 input-potencia-carro" type="text" name="potencia-carro01" id="potencia-carro01" required placeholder="423">
+                    </fieldset>
+                    <fieldset class="field-peso-carro01 field-peso-carro">
+                        <label for="peso-carro01">Peso (em Kg)</label>
+                        <input class="input-peso-carro01 input-peso-carro" type="text" name="peso-carro01" id="peso-carro01" required placeholder="1543">
+                    </fieldset>
+                    <fieldset class="field-pneu-carro01 field-pneu-carro">
+                        <p>Quais as dimensões do seu Pneu?</p>
+                        <label for="largura-pneu-carro-01">Largura</label>
+                        <input class="input-largura-pneu-carro01 input-largura-pneu-carro" type="text" name="largura-pneu-carro-01" id="largura-pneu-carro-01" required placeholder="255">
+                        <label for="aro-pneu-carro-01">Aro</label>
+                        <input class="input-aro-pneu-carro01 input-aro-pneu-carro" type="text" name="aro-pneu-carro-01" id="aro-pneu-carro-01" required placeholder="20">
+                        <label for="altura-pneu-carro-01">Altura</label>
+                        <input class="input-altura-pneu-carro01 input-altura-pneu-carro" type="text" name="altura-pneu-carro-01" id="altura-pneu-carro-01" required placeholder="45">
+                    </fieldset>
+                    <fieldset class="field-torque-carro01 field-torque-carro">
+                        <label for="torque-carro01">Torque máximo (em Kgfm)</label>
+                        <input class="input-torque-carro01 input-torque-carro" type="text" name="torque-carro01" id="torque-carro01" required placeholder="35">
+                    </fieldset>
+                    <fieldset class="field-rpm-torque-carro01 field-rpm-torque-carro">
+                        <label for="rpm-torque-carro01">RPM de entrega do torque máximo</label>
+                        <input class="input-rpm-torque-carro01 input-rpm-torque-carro" type="text" name="rpm-torque-carro01" id="rpm-torque-carro01" required placeholder="4000">
+                    </fieldset>
+                </div>
+            </div>
+            <div class="carro02 comparar" id="carro02">
+                <p class="id-carro">Carro do oponente</p>
+                <div>
+                    <fieldset class="field-nome-carro02 field-nome-carro">
+                        <label for="nome-carro02">Qual é o seu carro?</label>
+                        <input class="input-nome-carro02 input-nome-carro" type="text" name="nome-carro02" id="nome-carro02" required placeholder="Porsche 911 2010">
+                    </fieldset>
+                    <fieldset class="field-potencia-carro02 field-potencia-carro">
+                        <label for="potência-carro02">Potência (em CV)</label>
+                        <input class="input-potencia-carro02 input-potencia-carro" type="text" name="potencia-carro02" id="potencia-carro02" required placeholder="379">
+                    </fieldset>
+                    <fieldset class="field-peso-carro02 field-peso-carro">
+                        <label for="peso-carro02">Peso (em Kg)</label>
+                        <input class="input-peso-carro02 input-peso-carro" type="text" name="peso-carro02" id="peso-carro02" required placeholder="1243">
+                    </fieldset>
+                    <fieldset class="field-pneu-carro02 field-pneu-carro">
+                        <p>Quais as dimensões do seu Pneu?</p>
+                        <label for="largura-pneu-carro-02">Largura</label>
+                        <input class="input-largura-pneu-carro02 input-largura-pneu-carro" type="text" name="largura-pneu-carro-02" id="largura-pneu-carro-02" required placeholder="255">
+                        <label for="aro-pneu-carro-02">Aro</label>
+                        <input class="input-aro-pneu-carro02 input-aro-pneu-carro" type="text" name="aro-pneu-carro-02" id="aro-pneu-carro-02" required placeholder="20">
+                        <label for="altura-pneu-carro-02">Altura</label>
+                        <input class="input-altura-pneu-carro02 input-altura-pneu-carro" type="text" name="altura-pneu-carro-02" id="altura-pneu-carro-02" required placeholder="45">
+                    </fieldset>
+                    <fieldset class="field-torque-carro02 field-torque-carro">
+                        <label for="torque-carro02">Torque máximo (em Kgfm)</label>
+                        <input class="input-torque-carro02 input-torque-carro" type="text" name="torque-carro02" id="torque-carro02" required placeholder="42">
+                    </fieldset>
+                    <fieldset class="field-rpm-torque-carro02 field-rpm-torque-carro">
+                        <label for="rpm-torque-carro02">RPM de entrega do torque máximo</label>
+                        <input class="input-rpm-torque-carro02 input-rpm-torque-carro" type="text" name="rpm-torque-carro02" id="rpm-torque-carro02" required placeholder="4200">
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+       <div class="div-botao-comparar">
+        <button class="botao-comparar" id="botao-comparar">Descubra quem ganha este racha!</button>
+       </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
