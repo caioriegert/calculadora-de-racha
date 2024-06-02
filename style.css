@@ -65,6 +65,7 @@ body{
     margin: auto;
     align-items: center;
     justify-content: center;
+    padding-bottom: 20px;
 }
 
 .comparar{
@@ -116,4 +117,66 @@ body{
     color: white;
     font-size: 22px;
     border-radius: 20px;
+}
+
+.botoes-limpar{
+    width: 100%;
+    height: fit-content;
+    padding-top: 20px;
+    display: none;
+    flex-direction: row;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.botoes-limpar button{
+    width: 100%;
+    padding: 20px 0;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(218, 218, 218);
+    font-size: 15px;
+    border: 3px solid black;
+}
+
+.resultado-racha{
+    width: 95%;
+    height: fit-content;
+    padding: 20px 0;
+    row-gap: 20px;
+    display: none;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid black;
+    border-radius: 20px;
+}
+
+.tabela-notas{
+    width: 100%;
+    height: fit-content;
+    column-gap: 80px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.tabela-notas .notas-carro01 p{
+    padding: 5px 0;
+    font-size: 15px;
+}
+
+.tabela-notas .notas-carro02 p{
+    padding: 5px 0;
+    font-size: 15px;
+}
+
+.explicacao-resultado{
+    text-align: center;
+    font-size: 18px;
 }
